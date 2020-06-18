@@ -1,1 +1,17 @@
-<p>register works!</p>
+<div class="register" [formGroup]="registerFormGroup">
+  <div class="username">
+    <label for="username">Username</label>
+    <input type="text" formControlName="username" />
+  </div>
+  <div class="password">
+    <label for="password">Password</label>
+    <input type="password" formControlName="password" />
+  </div>
+  <div class="password">
+    <select for="password">
+      <option>Manager</option>
+      <option>Doctor</option>
+    </select>
+  </div>
+  <button (click)="register()">Submit</button>
+</div>
