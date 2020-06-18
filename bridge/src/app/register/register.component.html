@@ -1,16 +1,11 @@
-<div class="register" [formGroup]="registerFormGroup">
-  <form>
+<div class="register-div">
+  <form [formGroup]="registerFormGroup">
     <label for="username">Username</label>
     <input type="text" formControlName="username" />
 
     <label for="password">Password</label>
     <input type="password" formControlName="password" />
 
-    <label for="role">Role</label>
-    <select for="role">
-      <option>Manager</option>
-      <option>Doctor</option>
-    </select>
     <button (click)="register()">Submit</button>
   </form>
 </div>

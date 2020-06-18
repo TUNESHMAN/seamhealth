@@ -6,11 +6,13 @@ import { RegisterComponent } from './register/register.component';
 import { LoginGuard } from './Guards/login.guard';
 
 
-const routes: Routes = [{
-  path: "",
-  component: LandingPageComponent
-}, { path: "login", component: LoginComponent },
-{ path: "register", component: RegisterComponent },
+const routes: Routes = [
+  { path: "", redirectTo: 'login', pathMatch: "full" },
+  {
+    path: "landing", component: LandingPageComponent
+  },
+  { path: "register", component: RegisterComponent },
+  { path: "login", component: LoginComponent },
 ];
 
 

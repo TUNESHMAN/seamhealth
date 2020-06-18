@@ -66,7 +66,7 @@ header nav {
 /* Section-1 */
 #section1 {
   min-height: 400px;
-  background: url("./image/national.jpg");
+  background: url("../../assets/image/cancer.jpg");
   text-align: center;
   color: white;
   /* width: 100%; */
