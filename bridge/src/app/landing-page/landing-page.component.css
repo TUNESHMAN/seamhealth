@@ -13,6 +13,11 @@ body {
   margin: auto;
   overflow: hidden;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
 /* Header */
 header {
   background: #faeee7;
@@ -20,6 +25,7 @@ header {
   padding-top: 30px;
   min-height: 70px;
   border-bottom: blue;
+  margin-top: -5px;
 }
 
 header a {
@@ -27,6 +33,11 @@ header a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
+}
+
+header a:hover {
+  font-weight: bold;
+  color: blue;
 }
 
 header ul {
@@ -47,7 +58,48 @@ header .logo h1 {
   margin: 0;
 }
 
-header nav{
-    float: right;
-    margin-top: 10px;
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+/* Section-1 */
+#section1 {
+  min-height: 400px;
+  background: url("./image/national.jpg");
+  text-align: center;
+  color: white;
+  /* width: 100%; */
+}
+
+#section1 h1 {
+  margin-bottom: 10px;
+  margin-top: 100px;
+  font-size: 55px;
+}
+
+#section1 p {
+  font-size: 20px;
+}
+
+#section2 {
+  margin-top: 20px;
+}
+#section2 .box {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+#section2 .box img {
+  width: 90px;
+}
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #e8491d;
+  text-align: center;
 }
