@@ -1,17 +1,16 @@
 <div class="register" [formGroup]="registerFormGroup">
-  <div class="username">
+  <form>
     <label for="username">Username</label>
     <input type="text" formControlName="username" />
-  </div>
-  <div class="password">
+
     <label for="password">Password</label>
     <input type="password" formControlName="password" />
-  </div>
-  <div class="password">
-    <select for="password">
+
+    <label for="role">Role</label>
+    <select for="role">
       <option>Manager</option>
       <option>Doctor</option>
     </select>
-  </div>
-  <button (click)="register()">Submit</button>
+    <button (click)="register()">Submit</button>
+  </form>
 </div>
