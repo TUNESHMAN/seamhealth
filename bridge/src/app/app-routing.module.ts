@@ -4,15 +4,16 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginGuard } from './Guards/login.guard';
+import { LandingpageGuard } from './Guards/landingpage.guard';
 
 
 const routes: Routes = [
-  { path: "", redirectTo: 'login', pathMatch: "full" },
+  { path: "", redirectTo: 'login', pathMatch: "full", },
   {
-    path: "landing", component: LandingPageComponent
+    path: "landing", component: LandingPageComponent, canActivate: [LandingpageGuard]
   },
   { path: "register", component: RegisterComponent },
-  { path: "login", component: LoginComponent },
+  { path: "login", component: LoginComponent, canActivate: [LoginGuard] },
 ];
 
 
