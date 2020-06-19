@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 form input {
@@ -27,15 +28,13 @@ form input {
   margin-bottom: 25px;
 }
 
-/* form {
-    align-items: center;
-  } */
+
 .signup {
   text-align: center;
   font-weight: bold;
   color: gray;
   position: absolute;
-  /* margin-top: 30px; */
+
 }
 
 button {
