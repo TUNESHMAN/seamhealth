@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  width: 100%;
 }
 
 /* This is the global style */
@@ -20,12 +21,10 @@ ul {
 }
 /* Header */
 header {
-  /* background: #faeee7; */
   color: black;
   padding-top: 30px;
   min-height: 70px;
-  border-bottom: blue;
-  margin-top: -5px;
+  margin-top: -30px;
 }
 
 header a {
@@ -62,11 +61,13 @@ header .logo h1 {
 header nav {
   float: right;
   margin-top: 10px;
+  margin-right: 10px;
 }
 .logo {
   width: 150px;
   height: 80px;
-  padding-bottom: 25px;
+  margin-left: 10px;
+  /* padding-bottom: 25px; */
 }
 
 /* Section-1 */
@@ -114,7 +115,28 @@ footer {
   font-family: "Roboto", sans-serif;
   margin-top: 50px;
 }
-.logo-div {
+/* .logo-div {
   float: left;
   margin-bottom: 10px;
+} */
+
+.header-container {
+  /* width: 80%;
+  margin: auto;
+  overflow: hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-2 {
+  /* width: 80%;
+  margin: auto;
+  overflow: hidden; */
+  display: flex;
+  align-items: center;
+}
+
+.box > img {
+  height: 80px;
 }
